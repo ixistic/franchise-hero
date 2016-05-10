@@ -1,20 +1,26 @@
+body{
+  padding-bottom: 2.5rem;
+}
+
+
 .interview-left-container{
   padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
   display: table;
 
   .img-container{
     text-align: center;
 
     img{
-      width: 20rem;
+      width: 15rem;
+      @media (min-width: 34em) {
+        width: 25rem;
+      }
     }
   }
 }
 
 .interview-right-container{
   padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
 
   .number{
     font-size: 3.5em;
