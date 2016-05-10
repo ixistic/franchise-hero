@@ -3,8 +3,9 @@
   <component name="dataSourceStorageLocal">
     <data-source name="PostgreSQL - franchisehero_development@localhost" uuid="2bb89323-a3d9-4f50-b095-383d69c34f94">
       <secret-storage>master_key</secret-storage>
-      <first-sync>true</first-sync>
       <user-name>postgres</user-name>
+      <schema-pattern>franchisehero_development.pg_catalog franchisehero_development.public</schema-pattern>
+      <default-schemas>franchisehero_development.public</default-schemas>
     </data-source>
   </component>
 </project>

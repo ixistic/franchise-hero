@@ -27,5 +27,4 @@ test:
   username: postgres
 
 production:
-  <<: *default
-  database: franchisehero_production
+  url: <%= ENV['DATABASE_URL'] %>
