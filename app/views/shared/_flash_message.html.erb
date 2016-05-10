@@ -1,0 +1,3 @@
+<% flash.select { |type, message| message.is_a? String }.each do |type, message| %>
+    <%= type %> <%= message %>
+<% end %>

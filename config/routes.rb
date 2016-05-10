@@ -1,11 +1,15 @@
 Rails.application.routes.draw do
-  get 'interview/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'interview#index'
+  scope '/interviews' do
+    get '/', to: 'interview#new', as: 'new_interview'
+    post '/', to: 'interview#create', as: 'interview'
+  end
+
+  root 'interview#new'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

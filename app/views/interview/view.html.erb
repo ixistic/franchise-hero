@@ -1,0 +1,9 @@
+<%= form_for @interview, url: {action: 'create'} do |f| %>
+  <%= f.label :name, "ชื่อผู้ติดต่อ" %>
+  <%= f.text_field :name, placeholder: 'กรุณากรอกชื่อ...' %><br>
+  <%= f.label :tel, "เบอร์ติดต่อ" %>
+  <%= f.telephone_field :tel, placeholder: 'กรุณากรอกเบอร์โทรศัพท์...' %><br>
+  <%= f.label :email, "Email" %>
+  <%= f.email_field :email, placeholder: 'กรุณากรอกอีเมลล์...' %><br>
+  <%= f.submit "ส่ง" , class: 'btn btn-primary'%>
+<% end %>
