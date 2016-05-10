@@ -13,9 +13,9 @@ class InterviewController < ApplicationController
     @interview = Interview.new(interview_params)
 
     if @interview.save
-      flash[:notice] = 'Create success'
+      flash[:notice] = 'ส่งข้อมูลเรียบร้อยแล้ว'
     else
-      flash[:error] = 'Cannot create'
+      flash[:error] = 'กรุณากรอกข้อมูลให้ถูกต้อง'
     end
     redirect_to new_interview_path
   end
