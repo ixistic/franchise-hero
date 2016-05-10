@@ -1,9 +1,67 @@
-<%= form_for @interview, url: {action: 'create'} do |f| %>
-  <%= f.label :name, "ชื่อผู้ติดต่อ" %>
-  <%= f.text_field :name, placeholder: 'กรุณากรอกชื่อ...' %><br>
-  <%= f.label :tel, "เบอร์ติดต่อ" %>
-  <%= f.telephone_field :tel, placeholder: 'กรุณากรอกเบอร์โทรศัพท์...' %><br>
-  <%= f.label :email, "Email" %>
-  <%= f.email_field :email, placeholder: 'กรุณากรอกอีเมลล์...' %><br>
-  <%= f.submit "ส่ง" , class: 'btn btn-primary'%>
-<% end %>
+<div class="row">
+  <div class="col-sm-6 interview-left-container">
+    <div class="img-container">
+      <img src="<%= asset_path 'logo1.png' %>" class="img-fluid">
+    </div>
+    <div class="img-container">
+      <img src="<%= asset_path 'logo2.png' %>" class="img-fluid">
+    </div>
+  </div>
+  <div class="col-sm-6 interview-right-container">
+    <div class="col-sm-12 text-center">
+      <h1>COMING SOON ...</h1>
+    </div>
+    <div class="col-sm-12 text-center">
+      <h5>แหล่งโปรโมทแฟรนไชส์ที่แสนง่ายของคุณ</h5>
+    </div>
+    <div class="col-sm-12 content">
+      <div class="col-xs-12 col-sm-3 no-padding">
+        <div class="col-xs-4 number text-right">
+          1
+        </div>
+        <div class="col-xs-8 each-content">
+          <h2>สมัคร</h2>
+          <h6 class="thin">รวดเร็ว</h6>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 no-padding">
+        <div class="col-xs-3 number text-right">
+          2
+        </div>
+        <div class="col-xs-9 each-content">
+          <h2>ลงประกาศ</h2>
+          <h6 class="thin">มีประสิทธิภาพ</h6>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-3 no-padding">
+        <div class="col-xs-4 number text-right">
+          3
+        </div>
+        <div class="col-xs-8 each-content">
+          <h2>ได้รับ</h2>
+          <h6 class="thin">คนที่ใช่</h6>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 text-center" style="margin: 1rem 0 1rem 0">
+      <h5>สนใจโปรโมทเฟรนไชส์กับเราติดต่อ</h5>
+    </div>
+    <div class="col-sm-12">
+      <%= form_for @interview, url: {action: 'create'} do |f| %>
+          <fieldset class="form-group">
+            <%= f.label :name, "ชื่อผู้ติดต่อ" %>
+            <%= f.text_field :name, class: 'form-control', placeholder: 'กรุณากรอกชื่อ...' %>
+          </fieldset>
+          <fieldset class="form-group">
+            <%= f.label :tel, "เบอร์ติดต่อ" %>
+            <%= f.telephone_field :tel, class: 'form-control', placeholder: 'กรุณากรอกเบอร์โทรศัพท์...' %>
+          </fieldset>
+          <fieldset class="form-group">
+            <%= f.label :email, "Email" %>
+            <%= f.email_field :email, class: 'form-control', placeholder: 'กรุณากรอกอีเมลล์...' %>
+          </fieldset>
+          <%= f.submit "ส่งข้อมูล", class: 'btn btn-danger pull-xs-right' %>
+      <% end %>
+    </div>
+  </div>
+</div>
