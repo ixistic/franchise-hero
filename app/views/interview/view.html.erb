@@ -49,8 +49,12 @@
     <div class="col-sm-12">
       <%= form_for @interview, url: {action: 'create'} do |f| %>
           <fieldset class="form-group">
+            <%= f.label :franchise_name, "ชื่อเฟรนไชส์" %>
+            <%= f.text_field :franchise_name, class: 'form-control', placeholder: 'กรุณากรอกชื่อเฟรนไชส์...' %>
+          </fieldset>
+          <fieldset class="form-group">
             <%= f.label :name, "ชื่อผู้ติดต่อ" %>
-            <%= f.text_field :name, class: 'form-control', placeholder: 'กรุณากรอกชื่อ...' %>
+            <%= f.text_field :name, class: 'form-control', placeholder: 'กรุณากรอกชื่อผู้ติดต่อ...' %>
           </fieldset>
           <fieldset class="form-group">
             <%= f.label :tel, "เบอร์ติดต่อ" %>

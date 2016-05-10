@@ -23,7 +23,7 @@ class InterviewController < ApplicationController
   private
 
   def interview_params
-    params.require(:interview).permit(:email, :name, :tel)
+    params.require(:interview).permit(:email, :name, :tel, :franchise_name)
   end
 
 end
