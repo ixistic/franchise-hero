@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'main/index'
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   devise_for :users
@@ -12,7 +14,11 @@ Rails.application.routes.draw do
     post '/', to: 'interview#create', as: 'interview'
   end
 
-  root 'interview#new'
+  scope '/' do
+    get '/index', to: 'main#index', as: 'index_main'
+  end
+
+  root 'main#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
