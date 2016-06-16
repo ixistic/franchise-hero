@@ -1,2 +1,401 @@
-<h1>Main#index</h1>
-<p>Find me in app/views/main/index.html.erb</p>
+<%= render partial: 'layouts/navbar' %>
+<div class="container-fluid">
+  <div class="row bg-main">
+    <div class="container">
+      <div class="row">
+        <br>
+        <br>
+        <div class="col-sm-12">
+          <h3 class="text-xs-center" style="color: #ffffff">ช่องทางหาแฟรนไชส์และเป็นตัวแทนจำหน่ายง่ายๆ</h3>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="col-sm-12">
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <div class="card card-block text-xs-center cat">
+              <img src="<%= asset_path 'icon1.png' %>">
+              <p class="card-text text-truncate">แฟรนไชส์ยอดนิยม</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <div class="card card-block text-xs-center cat" style="padding-left: 0.5rem;padding-right: 0.5rem">
+              <img src="<%= asset_path 'icon2.png' %>">
+              <p class="card-text text-truncate">ตัวแทนจำหน่ายยอดเยี่ยม</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <div class="card card-block text-xs-center cat">
+              <img src="<%= asset_path 'icon3.png' %>">
+              <p class="card-text">อาหาร</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <div class="card card-block text-xs-center cat">
+              <img src="<%= asset_path 'icon4.png' %>">
+              <p class="card-text">เครื่องดื่ม</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <div class="card card-block text-xs-center cat">
+              <img src="<%= asset_path 'icon5.png' %>">
+              <p class="card-text text-truncate">ขนมและเบเกอรี่</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <div class="card card-block text-xs-center cat">
+              <img src="<%= asset_path 'icon6.png' %>">
+              <p class="card-text">การศึกษา</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6  col-xs-12">
+            <div class="card card-block text-xs-center cat">
+              <img src="<%= asset_path 'icon7.png' %>">
+              <p class="card-text text-truncate">สุขภาพและความงาม</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <div class="card card-block text-xs-center cat">
+              <img src="<%= asset_path 'icon8.png' %>">
+              <p class="card-text">ค้าปลีก</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <div class="card card-block text-xs-center cat">
+              <img src="<%= asset_path 'icon9.png' %>">
+              <p class="card-text">บริการ</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6  col-xs-12">
+            <div class="card card-block text-xs-center cat">
+              <img src="<%= asset_path 'icon10.png' %>">
+              <p class="card-text">แฟชั่น</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <div class="card card-block text-xs-center cat">
+              <img src="<%= asset_path 'icon11.png' %>">
+              <p class="card-text">สิ่งพิมพ์</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <div class="card card-block text-xs-center cat">
+              <img src="<%= asset_path 'icon12.png' %>">
+              <p class="card-text">อื่นๆ</p>
+            </div>
+          </div>
+        </div><!-- end icon -->
+        <div class="col-sm-offset-3 col-sm-6" style="padding-top: 40px">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="ค้นหาธุรกิจที่คุณต้องการ">
+            <span class="input-group-btn">
+              <button class="btn btn-success" type="button">ค้นหา</button>
+            </span>
+          </div>
+          <!--<div class="input-group below24 bias-input-group">-->
+
+            <!--<span class="input-group-addon">http://conttact.us/</span>-->
+
+            <!--<div class="input-group-btn bs-dropdown-to-select-group">-->
+              <!--<button type="button" class="btn btn-default dropdown-toggle as-is bs-dropdown-to-select" data-toggle="dropdown" tabindex="-1">-->
+                <!--<span data-bind="bs-drp-sel-label">us</span>-->
+                <!--<input type="hidden" name="country_path" data-bind="bs-drp-sel-value" value="us">-->
+                <!--<span class="caret"></span>-->
+                <!--<span class="sr-only">Toggle Dropdown</span>-->
+              <!--</button>-->
+              <!--<ul class="dropdown-menu" role="menu" style=" max-height: 300px; overflow: scroll; overflow-y: scroll; overflow-x: hidden; ">-->
+                <!--&lt;!&ndash; Loop &ndash;&gt;-->
+                <!--<li data-value="af"><a href="#">af - Afghanistan </a></li>-->
+                <!--<li data-value="ax"><a href="#">ax - Aland Islands </a></li>-->
+                <!--<li data-value="al"><a href="#">al - Albania </a></li>-->
+                <!--<li data-value="dz"><a href="#">dz - Algeria </a></li>-->
+                <!--<li data-value="as"><a href="#">as - American Samoa </a></li>-->
+                <!--<li data-value="ad"><a href="#">ad - Andorra </a></li>-->
+                <!--<li data-value="ao"><a href="#">ao - Angola </a></li>-->
+                <!--<li data-value="ai"><a href="#">ai - Anguilla </a></li>-->
+                <!--&lt;!&ndash; END Loop &ndash;&gt;-->
+              <!--</ul>-->
+            <!--</div>-->
+
+            <!--<span class="input-group-addon">/</span>-->
+
+            <!--<input type="text" value="" class="form-control" name="custom_name" placeholder="custompath">-->
+          <!--</div>-->
+        </div>
+        <div class="col-sm-3"></div>
+        <div class="col-sm-offset-3 col-sm-6" style="padding-top: 40px">
+          <div class="input-group">
+            <span class="input-group-btn">
+              <button class="btn btn-secondary" type="button">จับคู่</button>
+            </span>
+            <span class="input-group-btn">
+              <button class="btn btn-secondary" type="button">เจ้าของธุรกิจ</button>
+            </span>
+            <span class="input-group-btn">
+              <button class="btn btn-secondary" type="button">ร่วมทุน</button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+  </div>
+  <div class="row">
+    <div class="embed-responsive embed-responsive-16by9" style="padding-bottom: 12.5rem">
+      <iframe class="embed-responsive-item" src="//www.youtube.com/embed/rJedTtbt4Uo?&showinfo=0" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12" style="padding-top: 50px">
+      <div style="width: 100%; height: 20px; border-bottom: 1px solid black; text-align: center">
+        <span style="font-size: 20px; background-color: #F3F5F6; padding: 0 10px;">
+          ธุรกิจที่เราแนะนำ
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12" style="padding-top: 50px">
+          <!-- start card -->
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="card">
+              <a style="color: #353535;text-decoration: none;" href="#"><div class="card-block recom" href="#">
+                <div style="text-align: center;overflow: hidden;">
+                  <img style="height: 9.375rem;width: auto" src="<%= asset_path 'store/hero01.png' %>">
+                </div>
+                <hr>
+                <h4 class="card-title text-truncate"><span style="color:#ff6060">แฟรนไชส์ฮีโร่</span> FranchiseHero</h4>
+                <p class="card-text text-truncate">ประเภท : แฟรนไชส์</p>
+                <p class="card-text text-truncate">หมวด : เครื่องดื่ม</p>
+                <p class="card-text text-truncate">ลักษณะธุรกิจ : เครื่องดื่มแฟรนไชส์</p>
+                <p class="card-text text-truncate">เงินลงทุน : <span style="color:#ff6060">0 - 1,000 บาท</span></p>
+                <p class="card-text text-truncate">ค่าเฟรนไชส์ : <span style="color:#ff6060">0 บาท</span></p>
+                <p class="card-text text-truncate" style="padding-top: 10px">Tags :
+                  <a href="#"><button type="button" class="btn btn-primary btn-sm">แฟรนไชส์</button></a>
+                  <a href="#"><button type="button" class="btn btn-primary btn-sm">ธุรกิจ</button></a>
+                </p>
+              </div>
+              </a>
+              <hr style="margin: 0px">
+              <div class="card-block text-xs-center" style="padding-top: 0;padding-bottom: 0;font-size: 0.875em">
+                <a href="#" class="card-link"><img src="<%= asset_path 'icon15.png' %>"> ส่งข้อความ</a>
+                <hr class="hidden-xl-up" style="margin: 0">
+                <a href="#" class="card-link"><img width="40px" src="<%= asset_path 'icon13.png' %>"> เพิ่มรายการโปรด</a>
+              </div>
+            </div>
+          </div>
+          <!-- end card -->
+          <!-- start card -->
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="card">
+              <a style="color: #353535;text-decoration: none;" href="#"><div class="card-block recom" href="#">
+                <div style="text-align: center;overflow: hidden;">
+                  <img style="height: 9.375rem;width: auto" src="<%= asset_path 'store/Starluck.png' %>">
+                </div>
+                <hr>
+                <h4 class="card-title text-truncate"><span style="color:#ff6060">สตาร์ลัค</span> Starluck</h4>
+                <p class="card-text text-truncate">ประเภท : แฟรนไชส์</p>
+                <p class="card-text text-truncate">หมวด : เครื่องดื่ม</p>
+                <p class="card-text text-truncate">ลักษณะธุรกิจ : กาแฟ</p>
+                <p class="card-text text-truncate">เงินลงทุน : <span style="color:#ff6060">100,000 - 5,000,000 บาท</span></p>
+                <p class="card-text text-truncate">ค่าเฟรนไชส์ : <span style="color:#ff6060">100,000 บาท</span></p>
+                <p class="card-text text-truncate" style="padding-top: 10px">Tags :
+                  <a href="#"><button type="button" class="btn btn-primary btn-sm">กาแฟดี</button></a>
+                  <a href="#"><button type="button" class="btn btn-primary btn-sm">มีคุณภาพ</button></a>
+                </p>
+              </div>
+              </a>
+              <hr style="margin: 0px">
+              <div class="card-block text-xs-center" style="padding-top: 0;padding-bottom: 0;font-size: 0.875em">
+                <a href="#" class="card-link"><img src="<%= asset_path 'icon15.png' %>"> ส่งข้อความ</a>
+                <hr class="hidden-xl-up" style="margin: 0">
+                <a href="#" class="card-link"><img width="40px" src="<%= asset_path 'icon13.png' %>"> เพิ่มรายการโปรด</a>
+              </div>
+            </div>
+          </div>
+          <!-- end card -->
+          <!-- start card -->
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="card">
+              <a style="color: #353535;text-decoration: none;" href="#"><div class="card-block recom" href="#">
+                <div style="text-align: center;overflow: hidden;">
+                  <img style="height: 9.375rem;width: auto" src="<%= asset_path 'store/Ochay.png' %>">
+                </div>
+                <hr>
+                <h4 class="card-title text-truncate"><span style="color:#ff6060">โอเช</span> Ochay</h4>
+                <p class="card-text text-truncate">ประเภท : แฟรนไชส์</p>
+                <p class="card-text text-truncate">หมวด : เครื่องดื่ม</p>
+                <p class="card-text text-truncate">ลักษณะธุรกิจ : ชานมไข่มุก</p>
+                <p class="card-text text-truncate">เงินลงทุน : <span style="color:#ff6060">300,000 - 1,000,000 บาท</span></p>
+                <p class="card-text text-truncate">ค่าเฟรนไชส์ : <span style="color:#ff6060">300,000 บาท</span></p>
+                <p class="card-text text-truncate" style="padding-top: 10px">Tags :
+                  <a href="#"><button type="button" class="btn btn-primary btn-sm">ชาอันดับหนึ่ง</button></a>
+                  <a href="#"><button type="button" class="btn btn-primary btn-sm">ดี</button></a>
+                </p>
+              </div>
+              </a>
+              <hr style="margin: 0px">
+              <div class="card-block text-xs-center" style="padding-top: 0;padding-bottom: 0;font-size: 0.875em">
+                <a href="#" class="card-link"><img src="<%= asset_path 'icon15.png' %>"> ส่งข้อความ</a>
+                <hr class="hidden-xl-up" style="margin: 0">
+                <a href="#" class="card-link"><img width="40px" src="<%= asset_path 'icon13.png' %>"> เพิ่มรายการโปรด</a>
+              </div>
+            </div>
+          </div>
+          <!-- end card -->
+          <!-- start card -->
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="card">
+              <a style="color: #353535;text-decoration: none;" href="#"><div class="card-block recom" href="#">
+                <div style="text-align: center;overflow: hidden;">
+                  <img style="height: 9.375rem;width: auto" src="<%= asset_path 'store/Coffeword.png' %>">
+                </div>
+                <hr>
+                <h4 class="card-title text-truncate"><span style="color:#ff6060">คอฟฟี่ เวิด</span> Coffee Word</h4>
+                <p class="card-text text-truncate">ประเภท : แฟรนไชส์</p>
+                <p class="card-text text-truncate">หมวด : เครื่องดื่ม</p>
+                <p class="card-text text-truncate">ลักษณะธุรกิจ : กาแฟ</p>
+                <p class="card-text text-truncate">เงินลงทุน : <span style="color:#ff6060">500,000 - 4,000,000 บาท</span></p>
+                <p class="card-text text-truncate">ค่าเฟรนไชส์ : <span style="color:#ff6060">500,000 บาท</span></p>
+                <p class="card-text text-truncate" style="padding-top: 10px">Tags :
+                  <a href="#"><button type="button" class="btn btn-primary btn-sm">ทุกวัย</button></a>
+                  <a href="#"><button type="button" class="btn btn-primary btn-sm">กาแฟดำ</button></a>
+                </p>
+              </div>
+              </a>
+              <hr style="margin: 0px">
+              <div class="card-block text-xs-center" style="padding-top: 0;padding-bottom: 0;font-size: 0.875em">
+                <a href="#" class="card-link"><img src="<%= asset_path 'icon15.png' %>"> ส่งข้อความ</a>
+                <hr class="hidden-xl-up" style="margin: 0">
+                <a href="#" class="card-link"><img width="40px" src="<%= asset_path 'icon13.png' %>"> เพิ่มรายการโปรด</a>
+              </div>
+            </div>
+          </div>
+          <!-- end card -->
+          <!-- start card -->
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="card">
+              <a style="color: #353535;text-decoration: none;" href="#"><div class="card-block recom" href="#">
+                <div style="text-align: center;overflow: hidden;">
+                  <img style="height: 9.375rem;width: auto" src="<%= asset_path 'store/inthanicoffee.png' %>">
+                </div>
+                <hr>
+                <h4 class="card-title text-truncate"><span style="color:#ff6060">อินทนิคอฟฟี่</span> Inthaini Coffee</h4>
+                <p class="card-text text-truncate">ประเภท : แฟรนไชส์</p>
+                <p class="card-text text-truncate">หมวด : เครื่องดื่ม</p>
+                <p class="card-text text-truncate">ลักษณะธุรกิจ : กาแฟ</p>
+                <p class="card-text text-truncate">เงินลงทุน : <span style="color:#ff6060">900,000 บาท</span></p>
+                <p class="card-text text-truncate">ค่าเฟรนไชส์ : <span style="color:#ff6060">60,000 บาท</span></p>
+                <p class="card-text text-truncate" style="padding-top: 10px">Tags :
+                  <a href="#"><button type="button" class="btn btn-primary btn-sm">กาแฟเข้ม</button></a>
+                  <a href="#"><button type="button" class="btn btn-primary btn-sm">ทุกวัน</button></a>
+                </p>
+              </div>
+              </a>
+              <hr style="margin: 0px">
+              <div class="card-block text-xs-center" style="padding-top: 0;padding-bottom: 0;font-size: 0.875em">
+                <a href="#" class="card-link"><img src="<%= asset_path 'icon15.png' %>"> ส่งข้อความ</a>
+                <hr class="hidden-xl-up" style="margin: 0">
+                <a href="#" class="card-link"><img width="40px" src="<%= asset_path 'icon13.png' %>"> เพิ่มรายการโปรด</a>
+              </div>
+            </div>
+          </div>
+          <!-- end card -->
+          <!-- start card -->
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="card">
+              <a style="color: #353535;text-decoration: none;" href="#"><div class="card-block recom" href="#">
+                <div style="text-align: center;overflow: hidden;">
+                  <img style="height: 9.375rem;width: auto" src="<%= asset_path 'store/Sweetmiks.png' %>">
+                </div>
+                <hr>
+                <h4 class="card-title text-truncate"><span style="color:#ff6060">สวีตมิลส์</span> Sweet Milks</h4>
+                <p class="card-text text-truncate">ประเภท : แฟรนไชส์</p>
+                <p class="card-text text-truncate">หมวด : เครื่องดื่ม</p>
+                <p class="card-text text-truncate">ลักษณะธุรกิจ : นมสดและแซนวิส</p>
+                <p class="card-text text-truncate">เงินลงทุน : <span style="color:#ff6060">15,000 - 39,000 บาท</span></p>
+                <p class="card-text text-truncate">ค่าเฟรนไชส์ : <span style="color:#ff6060">15,000 บาท</span></p>
+                <p class="card-text text-truncate" style="padding-top: 10px">Tags :
+                  <a href="#"><button type="button" class="btn btn-primary btn-sm">ขายนม</button></a>
+                  <a href="#"><button type="button" class="btn btn-primary btn-sm">ขายแซนวิส</button></a>
+                </p>
+              </div>
+              </a>
+              <hr style="margin: 0px">
+              <div class="card-block text-xs-center" style="padding-top: 0;padding-bottom: 0;font-size: 0.875em">
+                <a href="#" class="card-link"><img src="<%= asset_path 'icon15.png' %>"> ส่งข้อความ</a>
+                <hr class="hidden-xl-up" style="margin: 0">
+                <a href="#" class="card-link"><img width="40px" src="<%= asset_path 'icon13.png' %>"> เพิ่มรายการโปรด</a>
+              </div>
+            </div>
+          </div>
+          <!-- end card -->
+          <!--<select class="selectpicker">-->
+            <!--<option>Mustard</option>-->
+            <!--<option>Ketchup</option>-->
+            <!--<option>Relish</option>-->
+          <!--</select>-->
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12" style="padding-top: 50px">
+      <div style="width: 100%; height: 20px; border-bottom: 1px solid black; text-align: center">
+        <span style="font-size: 20px; background-color: #F3F5F6; padding: 0 10px;">
+          จับคู่
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-xs-center" style="padding-top: 50px">
+          <p>ถ้าคุณยังไม่รู้ตัวเองอยากทำธุรกิจประเภทใด ทางเว็บไซต์ของเรามีระบบแมทซ์</p>
+          <p>ที่ทำให้คุณจับคู่กับธุรกิจที่เหมาะสมกับคุณได้</p>
+          <img src="<%= asset_path 'icon27.png' %>"><br>
+          <button class="btn btn-primary btn-lg" style="background-color: #f5f5f5;color: #ff6060; width: 10rem">คลิกเลย</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12" style="padding-top: 50px">
+      <div style="width: 100%; height: 20px; border-bottom: 1px solid black; text-align: center">
+        <span style="font-size: 20px; background-color: #F3F5F6; padding: 0 10px;">
+          ร่วมทุน
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="row" style="padding-bottom: 100px">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-xs-center" style="padding-top: 50px">
+          <p>แม้คุณอาจจะทำธุรกิจ แต่มีปัญหาว่าไม่มีทุนหรือมีทักษะที่เพียงพอ</p>
+          <p>ระบบนี้จะเป็นตัวแก้ปัญหาให้คุณสมารถหาผู้มีอุดมการณ์เดียวกัน</p>
+          <p>ที่จะเกื้อกูลคุณทำให้คุณสามารถลงทุนในธุรกิจได้</p>
+          <img src="<%= asset_path 'icon29.png' %>"><br>
+          <button class="btn btn-primary btn-lg" style="background-color: #f5f5f5;color: #ff6060; width: 10rem">เร็วๆนี้</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row bg-main-low">
+    <div class="container">
+      <div class="row text-xs-center" style="padding: 50px 0 50px 0">
+        <h3 style="color: #ffffff;line-height: 50px">คุณเป็นเจ้าของธุรกิจ และกำลังหาผู้ร่วมธุรกิจอยู่ไหม?<br>
+          สมัครตอนนี้ พร้อมรับสิทธิพิเศษ!!
+        </h3><br><br>
+        <button class="btn btn-primary btn-lg" style="width: 10rem">สมัครสมาชิก</button>
+      </div>
+    </div>
+  </div>
+</div>
+<%= render partial: 'layouts/footer' %>

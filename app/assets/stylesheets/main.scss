@@ -1,3 +1,80 @@
-// Place all the styles related to the main controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+body{
+  padding-top: 3.75rem;
+  color: $black;
+  background-color: $dark-white;
+}
+
+label{
+  color: #d9534f;
+}
+
+.nav-image{
+  margin-top: -10px;
+  width: 11rem;
+  @media (min-width: 34em) {
+    width: 11rem;
+  }
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+  background-color: $red;
+  border-color: $red;
+}
+
+.btn-danger,
+.btn-danger:hover,
+.btn-danger:active,
+.btn-danger:visited,
+.btn-danger:focus {
+  background-color: $black;
+  border-color: $black;
+}
+
+.btn-success,
+.btn-success:hover,
+.btn-success:active,
+.btn-success:visited,
+.btn-success:focus {
+  background-color: $blue;
+  border-color: $blue;
+}
+
+.bg-main {
+  background: url(asset_path('bus1.jpg')) no-repeat center center;
+  background-size: cover;
+}
+
+.bg-main-low {
+  background: url(asset_path('bus2.jpg')) no-repeat;
+  background-size: cover;
+}
+
+.btn-secondary{
+  width: 100%;
+}
+
+.card-block.cat{
+  padding: 1rem;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+.card-block.cat:hover{
+  background-color: $light-gray;
+}
+
+.card-block.recom{
+  color: $black;
+  text-decoration: none;
+}
+
+.card-block.recom:hover{
+  background-color: $light-gray;
+}
+
+.bias-input-group .input-group-addon + .input-group-btn > .btn {border-radius: 0;}
+.bias-input-group .input-group-addon + .input-group-btn + .input-group-addon {border-right: 0; border-left: 0;}
