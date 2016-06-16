@@ -43,6 +43,16 @@ label{
   border-color: $blue;
 }
 
+.btn-info,
+.btn-info:hover,
+.btn-info:active,
+.btn-info:visited,
+.btn-info:focus {
+  background-color: $light-gray;
+  border-color: $light-gray;
+  color: $white;
+}
+
 .bg-main {
   background: url(asset_path('bus1.jpg')) no-repeat center center;
   background-size: cover;

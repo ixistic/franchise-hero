@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'franchise/view'
+
   get 'category/view'
 
   get 'main/index'
@@ -20,8 +22,13 @@ Rails.application.routes.draw do
     get '/index', to: 'main#index', as: 'index_main'
   end
 
-  scope '/category' do
+  scope '/categories' do
     get '/', to: 'category#view', as: 'view_category'
+  end
+
+  scope '/franchises' do
+    get '/', to: 'franchise#view', as: 'view_franchise'
+    get '/contact', to: 'franchise#contact', as: 'contact_franchise'
   end
 
   root 'main#index'
