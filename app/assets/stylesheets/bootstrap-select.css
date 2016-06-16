@@ -100,7 +100,7 @@ select.selectpicker {
   z-index: 1060;
 }
 .bootstrap-select.btn-group .dropdown-toggle .filter-option {
-  display: inline-block;
+  /*display: inline-block;*/
   overflow: hidden;
   width: 100%;
   text-align: left;

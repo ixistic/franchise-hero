@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'category/view'
+
   get 'main/index'
 
   devise_for :admin_users, ActiveAdmin::Devise.config
@@ -16,6 +18,10 @@ Rails.application.routes.draw do
 
   scope '/' do
     get '/index', to: 'main#index', as: 'index_main'
+  end
+
+  scope '/category' do
+    get '/', to: 'category#view', as: 'view_category'
   end
 
   root 'main#index'
