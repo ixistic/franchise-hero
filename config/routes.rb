@@ -31,7 +31,7 @@ Rails.application.routes.draw do
     get '/contact', to: 'franchise#contact', as: 'contact_franchise'
   end
 
-  root 'main#index'
+  root 'interview#new'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

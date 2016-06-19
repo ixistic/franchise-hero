@@ -74,7 +74,8 @@ label{
 }
 
 .card-block.cat:hover{
-  background-color: $light-gray;
+  //background-color: $light-gray;
+  //margin-top: 20px;
 }
 
 .card-block.recom{
@@ -83,7 +84,13 @@ label{
 }
 
 .card-block.recom:hover{
-  background-color: $light-gray;
+  //background-color: $light-gray;
+  //margin-top: 20px;
+}
+
+.card:hover{
+  position: relative;
+  top: -3px;
 }
 
 .bias-input-group .input-group-addon + .input-group-btn > .btn {border-radius: 0;}
