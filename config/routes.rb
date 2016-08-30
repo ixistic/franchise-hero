@@ -1,10 +1,6 @@
 Rails.application.routes.draw do
 
-  get 'franchise/view'
 
-  get 'category/view'
-
-  get 'main/index'
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
@@ -13,6 +9,17 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
+
+  get 'crowding/view'
+
+  get 'matching/view'
+
+  get 'franchise/view'
+
+  get 'category/view'
+
+  get 'main/index'
+
   scope '/interviews' do
     get '/', to: 'interview#new', as: 'new_interview'
     post '/', to: 'interview#create', as: 'interview'
@@ -29,6 +36,11 @@ Rails.application.routes.draw do
   scope '/franchises' do
     get '/', to: 'franchise#view', as: 'view_franchise'
     get '/contact', to: 'franchise#contact', as: 'contact_franchise'
+  end
+
+  scope '/matching' do
+    get '/', to: 'matching#view', as: 'view_matching'
+    get '/final', to: 'matching#final', as: 'final_matching'
   end
 
   root 'interview#new'

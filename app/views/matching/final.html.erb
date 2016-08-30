@@ -1,0 +1,63 @@
+<%= render partial: 'layouts/navbar' %>
+<div class="container-fluid">
+  <div class="row" style="padding: 20px 0 20px 0">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-9" style="padding-top: 10px">
+          <h2><i class="fa fa-caret-left fa-lg" aria-hidden="true" style="color:#ff6060"></i>&emsp; จับคู่</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" style="padding: 0px 0 200px 0;">
+    <div class="container">
+      <div class="row" style="padding-top: 30px;">
+        <div class="col-xs-6 col-xs-offset-3 text-xs-center" style="background-color:#ff6060;padding-top: 10px">
+          <h4 style="color:#f5f5f5">ธุรกิจที่แมทซ์</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 col-xs-offset-3 text-xs-center">
+          <div class="row" style="border: 1px solid #e5e5e5;padding-top: 20px">
+            <!-- start card -->
+            <div class="col-lg-8 col-md-8 col-xs-12 col-md-offset-2 col-lg-offset-2">
+              <div class="card">
+                <a style="color: #353535;text-decoration: none;" href="#"><div class="card-block recom" href="#">
+                  <div style="text-align: center;overflow: hidden;">
+                    <img style="height: 4.375rem;width: auto" src="<%= asset_path 'store/Starluck.png' %>">
+                  </div>
+                  <hr>
+                  <p class="card-title text-truncate"><span style="color:#ff6060">สตาร์ลัค</span> Starluck</p>
+                  <p class="card-text text-truncate">ประเภท : แฟรนไชส์</p>
+                  <p class="card-text text-truncate">หมวด : เครื่องดื่ม</p>
+                  <p class="card-text text-truncate">ลักษณะธุรกิจ : กาแฟ</p>
+                  <p class="card-text text-truncate">เงินลงทุน : <span style="color:#ff6060">100,000 - 5,000,000 บาท</span></p>
+                  <p class="card-text text-truncate">ค่าเฟรนไชส์ : <span style="color:#ff6060">100,000 บาท</span></p>
+                  <!--<p class="card-text text-truncate" style="padding-top: 10px">Tags :-->
+                  <!--<a href="#"><button type="button" class="btn btn-primary btn-sm">กาแฟดี</button></a>-->
+                  <!--<a href="#"><button type="button" class="btn btn-primary btn-sm">มีคุณภาพ</button></a>-->
+                  <!--</p>-->
+                </div>
+                </a>
+                <hr style="margin: 0px">
+                <div class="card-block text-xs-center" style="padding-top: 0;padding-bottom: 0;font-size: 0.875em">
+                  <a href="#" class="card-link"><img class="icon-image-small" src="<%= asset_path 'icon15.png' %>"> ส่งข้อความ</a>
+                  <hr class="hidden-xl-up" style="margin: 0">
+                  <a href="#" class="card-link"><img class="icon-image-small" src="<%= asset_path 'icon13.png' %>"> เพิ่มรายการโปรด</a>
+                </div>
+              </div>
+            </div>
+            <!-- end card -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row text-xs-center" style="padding-top: 30px">
+      <button type="button" class="btn btn-primary btn-lg">ดูเพิ่มเติม</button>
+    </div>
+    <div class="row text-xs-center" style="padding-top: 30px">
+      <button type="button" class="btn btn-danger">ทำอีกครั้ง</button>
+    </div>
+  </div>
+<%= render partial: 'layouts/footer' %>
+</div>

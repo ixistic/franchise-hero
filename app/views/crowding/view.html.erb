@@ -1,0 +1,32 @@
+<%= render partial: 'layouts/navbar' %>
+<div class="container-fluid">
+  <div class="row" style="padding: 20px 0 20px 0">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-9" style="padding-top: 10px">
+          <h2><i class="fa fa-caret-left fa-lg" aria-hidden="true" style="color:#ff6060"></i>&emsp; ขอสินเชื่อ</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" style="padding: 30px 0 200px 0;">
+    <div class="container">
+      <div class="row" style="padding-top: 30px">
+        <div class="col-xs-8 col-xs-offset-2 text-xs-center">
+          <h2>ส่งคำขอสินเชื่อออนไลน์</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-sm-offset-2" style="padding-top: 50px">
+              <img style="width: 100%;padding-bottom: 50px" src="<%= asset_path 'bank/Bank.png' %>">
+              <button type="button" class="btn btn-primary btn-lg btn-block">คำนวณสินเชื่อธุรกิจเบื้องต้น</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <%= render partial: 'layouts/footer' %>
+</div>
