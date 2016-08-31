@@ -1,0 +1,40 @@
+<%= render partial: 'layouts/navbar' %>
+<div class="container-fluid">
+  <div class="row" style="padding: 50px 0 50px 0;">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-sm-12 text-xs-center">
+          <h2>เข้าสู่ระบบ</h2>
+        </div>
+      </div>
+
+      <div class="row" style="padding-top: 50px;padding-bottom: 100px">
+        <div class="col-sm-5 col-sm-offset-1 text-xs-center">
+          <h2 style="color: #ff6060;">FranchiseHero สมัครฟรี</h2>
+          <p>เพื่อที่ทำให้การค้นหาแฟรนไชส์เป็นเรื่องง่าย</p>
+          <div class="img-container">
+            <img class="icon-image-exlarge" src="<%= asset_path 'logo1.png' %>">
+          </div>
+        </div>
+        <div class="col-sm-4 text-xs-center">
+          <div class="input-group">
+            <input style="margin-bottom: 10px" type="text" class="form-control" placeholder="อีเมลล์">
+            <input style="margin-bottom: 10px" type="text" class="form-control" placeholder="รหัสผ่าน">
+            <a><p style="margin-bottom: 10px" class="text-xs-right">ลืมรหัสผ่านคลิกที่นี่</p></a>
+          </div>
+          <span class="input-group-btn">
+            <button style="margin-bottom: 40px" class="btn btn-primary btn-block btn-lg" type="button">เข้าสู่ระบบ</button>
+          </span>
+          <p>สำหรับผู้ที่ยังไม่สมัครสมาชิก<br>ทั้งส่วนของเจ้าของธุรกิจและผู้ที่สนใจ</p>
+          <span class="input-group-btn">
+            <button class="btn btn-primary btn-block btn-lg" type="button">สมัครสมาชิก</button>
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <%= render partial: 'layouts/footer' %>
+</div>
+

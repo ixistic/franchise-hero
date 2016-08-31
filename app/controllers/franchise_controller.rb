@@ -1,6 +1,13 @@
 class FranchiseController < ApplicationController
-  def view
+  def product
   end
-  def contact
+
+  def money
+  end
+
+  def detail
+  end
+
+  def other
   end
 end

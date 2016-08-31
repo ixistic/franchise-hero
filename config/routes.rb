@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
 
 
+  get 'authentication/login'
+
+  get 'authentication/register'
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
@@ -36,6 +39,10 @@ Rails.application.routes.draw do
   scope '/franchises' do
     get '/', to: 'franchise#view', as: 'view_franchise'
     get '/contact', to: 'franchise#contact', as: 'contact_franchise'
+    get '/product', to: 'franchise#product', as: 'product_franchise'
+    get '/money', to: 'franchise#money', as: 'money_franchise'
+    get '/detail', to: 'franchise#detail', as: 'detail_franchise'
+    get '/other', to: 'franchise#other', as: 'other_franchise'
   end
 
   scope '/matching' do
